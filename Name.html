@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name Decoder: Unveil Your Number</title>
+    <link rel="stylesheet" href="style1.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1><center><u><strong> Name Decoder: Unveil Your Number</strong></u></center></h1>
+        <h3><center>Discover your numerology number based on your name!</center></h3>
+        <div class="A">
+        <p><center><b>Enter your full name, and let us unveil the cosmic number that defines your destiny!</b></center></p>
+        </div>
+        <br><br>
+        
+        <div class="form-container">
+            <form id="nameForm" onsubmit="return calculateNumber(event)">
+                <center>
+                    <input type="text" id="nameInput" placeholder="Enter your full name" required>
+                    <input type="submit" value="Reveal My Number" id="submitButton">
+                </center>
+            </form>
+        </div>
+
+        <br><br>
+
+        <div id="result" class="result-container">
+        </div>
+    </div>
+
+    <script src="nameDecoder.js"></script>
+</body>
+</html>

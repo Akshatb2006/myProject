@@ -1,0 +1,79 @@
+
+body {
+    background: url('digital-art-moon-wallpaper.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    color: #53d4d4;
+    text-shadow: 2px 2px 5px #fff(0, 0, 0, 0.8);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    font-size: 3em;
+    color: #FFD700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin-top: 50px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+
+}
+
+h3 {
+    font-size: 1.5em;
+    color: #e0ea85;
+    margin-top: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    font-size: 1.2em;
+    color: #00FFFF;
+    margin-top: 20px;
+    padding: 0 20px;
+}
+
+
+input[type="button"] {
+    background-color: rgba(0, 128, 255, 0.7); 
+    border: 2px solid #00ffff;
+    color: #fff;
+    font-size: 1.5em;
+    padding: 20px 40px;
+    margin: 15px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="button"]:hover {
+    background-color: #00ffff;
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+input[type="button"]:active {
+    background-color: #0099cc;
+    transform: scale(1);
+}
+
+
+center {
+    display: block;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+h2{
+    font-size: 1.5em;
+    color: #FFD700;
+    margin-top: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}

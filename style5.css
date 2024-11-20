@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('flowers-65036.jpg') no-repeat center center fixed;
+    background-size: cover;
+    background-color: #f0f8ff;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5em;
+}
+
+h3 {
+    color: #444;
+    font-size: 1.5em;
+}
+
+.form-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+input, select {
+    padding: 10px;
+    margin: 10px;
+    width: 250px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 15px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#image-container {
+    margin-top: 20px;
+    position: relative; 
+    display: inline-block; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px; 
+    padding: 10px;
+}
+
+#image-container img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+

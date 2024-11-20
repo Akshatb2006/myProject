@@ -1,0 +1,110 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('universe-8766586.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ff5733;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #ffa500;
+    margin-bottom: 20px;
+}
+
+.input-box {
+    margin: 20px 0;
+}
+
+label {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+input {
+    padding: 15px;
+    font-size: 1.2rem;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #ff5733;
+    background-color: #1f1f1f;
+    color: white;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ffa500;
+}
+
+button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ffa500;
+}
+
+.result-box {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    color: #ff5733;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 87, 51, 0.2);
+    border: 2px solid #ff5733;
+    white-space: pre-line; 
+    word-wrap: break-word;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    .input-box input {
+        width: 90%;
+    }
+}

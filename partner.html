@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partner Face Finder - Numerology</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+    <h1><center><u><strong>Partner Face Finder</strong></u></center></h1>
+    <h3><center>Let numerology reveal your future partner's face! (With a funny twist!)</center></h3>
+
+    <div class="form-container">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+        <label for="dob">Your Date of Birth (YYYY-MM-DD):</label>
+        <input type="date" id="dob">
+        <label for="gender">Your Gender:</label>
+        <select id="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <button onclick="findPartnerFace()">Find Your Future Partner's Face</button>
+    </div>
+
+    <p id="result"></p>
+    <div id="image-container"></div>
+    
+    <script src="partner.js"></script>
+</body>
+</html>
