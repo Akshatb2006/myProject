@@ -1,10 +1,8 @@
-
 const letterToNumber = {
     'a': 1, 'b': 2, 'c': 3, 'd': 4, 'e': 5, 'f': 6, 'g': 7, 'h': 8, 'i': 9,
     'j': 1, 'k': 2, 'l': 3, 'm': 4, 'n': 5, 'o': 6, 'p': 7, 'q': 8, 'r': 9,
     's': 1, 't': 2, 'u': 3, 'v': 4, 'w': 5, 'x': 6, 'y': 7, 'z': 8
 };
-
 
 function calculateNumerologyNumber(name) {
     let sum = 0;
@@ -16,41 +14,33 @@ function calculateNumerologyNumber(name) {
         }
     }
 
-    while (sum > 9) {
+    while (sum > 9 && sum !== 11 && sum !== 22 && sum !== 33) {
         sum = sum.toString().split('').reduce((acc, num) => acc + parseInt(num), 0);
     }
 
     return sum;
 }
 
-
 function calculateCompatibility(event) {
     event.preventDefault(); 
 
-    
-    let name1 = document.getElementById('nameInput1').value;
-    let name2 = document.getElementById('nameInput2').value;
+    let name1 = document.getElementById('name1').value;
+    let name2 = document.getElementById('name2').value;
 
-    
     let number1 = calculateNumerologyNumber(name1);
     let number2 = calculateNumerologyNumber(name2);
 
-    
     let compatibility = Math.abs(number1 - number2) * 11; 
 
-    
     if (compatibility > 100) {
         compatibility = 100;
     }
 
-    
     displayResult(compatibility, name1, name2);
 }
 
-
 function displayResult(compatibility, name1, name2) {
     let resultContainer = document.getElementById('result');
-    
     
     let message = '';
     if (compatibility >= 90) {
@@ -95,7 +85,6 @@ function displayResult(compatibility, name1, name2) {
         `;
     }
 
-    
     resultContainer.innerHTML = `
         <h3>Your Compatibility:</h3>
         <p><strong>${name1}</strong> & <strong>${name2}</strong> have a <span class="number">${compatibility}%</span> compatibility!</p>
@@ -103,3 +92,5 @@ function displayResult(compatibility, name1, name2) {
         <p>Based on numerology, your connection could be written in the stars... or maybe in the space between your texts! 🌌</p>
     `;
 }
+
+document.getElementById('calculate-btn').addEventListener('click', calculateCompatibility);

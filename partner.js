@@ -106,7 +106,7 @@ function generatePartnerFaceImage(number, gender) {
             imagePath = gender === "male" ? "7women.jpg" : "7men.jpg";
             break;
         case 8:
-            imagePath = gender === "male" ? "8women.avif" : "8men.jpg";
+            imagePath = gender === "male" ? "8women.jpg" : "8men.jpg";
             break;
         case 9:
             imagePath = gender === "male" ? "9women.jpg" : "9men.jpg";
